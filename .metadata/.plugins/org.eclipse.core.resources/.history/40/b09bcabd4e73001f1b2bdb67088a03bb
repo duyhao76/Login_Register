@@ -1,0 +1,5 @@
+package vn.Login_Register.dao;
+
+public abstract class IUserDao {
+
+}

@@ -1,0 +1,13 @@
+package vn.Login_Register.controllers;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet(urlPatterns = { "/login" })
+public class LoginController extends HttpServlet{
+
+	private static final long serialVersionUID = 1L;
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package vn.Login_Register.controllers.manager;
+
+public class HomeController {
+
+}
