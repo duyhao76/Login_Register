@@ -1,5 +1,0 @@
-package vn.Login_Register.dao;
-
-public interface IUserDao {
-
-}
