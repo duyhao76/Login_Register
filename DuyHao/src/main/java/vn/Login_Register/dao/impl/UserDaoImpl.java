@@ -1,5 +1,6 @@
 package vn.Login_Register.dao.impl;
 
+import java.io.OutputStream;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -71,6 +72,26 @@ public class UserDaoImpl extends DBConnectSQL implements IUserDao {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	@Override
+	public byte[] getUserAvatar(String username) {
+		byte[] avatar = null;
+		String sql = "select avatar from Account where username = ?";
+		try {
+			conn = new DBConnectSQL().getConnection();
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, username);
+			
+			rs = ps.executeQuery();
+			
+			if (rs.next()) {
+                avatar = rs.getBytes("avatar");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return avatar;
 	}
 
 }

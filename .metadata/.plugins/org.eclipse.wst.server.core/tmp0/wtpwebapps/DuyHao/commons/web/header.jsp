@@ -41,7 +41,7 @@
 								| <a href="${pageContext.request.contextPath }/register">Đăng ký</a></li>
 							</c:when>
 					<c:otherwise>
-								<li><a href="${pageContext.request.contextPath}/member/myaccount">${sessionScope.account.fullName}</a>
+								<li><a href="${pageContext.request.contextPath}/myaccount">${sessionScope.account.fullName}</a>
 					| <a href="${pageContext.request.contextPath }/logout">Đăng Xuất</a></li>
 				</c:otherwise>
 				</c:choose>

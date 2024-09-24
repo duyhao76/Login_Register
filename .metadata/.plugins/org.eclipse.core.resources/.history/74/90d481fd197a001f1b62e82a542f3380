@@ -1,0 +1,9 @@
+package vn.Login_Register.controllers;
+
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/uploadmulti")
+
+public class UploadController {
+
+}
